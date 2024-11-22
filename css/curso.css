@@ -1,0 +1,481 @@
+:root {
+    --primario: #2EC4FA;
+    --primarioOscuro: #1f96c1;
+    --secundario: #D89F6C;
+    --secunadrioClaro: #ff8921;
+    --verde: #C4DD09;
+    --blanco: #fff;
+    --negro: #000;
+    --gris: #a0a4a8;
+    --grisOscuro: #5d5f60;
+    --grisClaro: #f1f3f5;
+    --palletclaro: #fdf498;
+    --vilegend: #7bc043;
+    /* Color para botones y elementos destacados */
+    --fuentePrincipal: "SoDo Sans SemiBold", Helvetica, Arial, sans-serif;
+    --text-color: var(--negro);
+}
+
+html {
+    box-sizing: border-box;
+    /* Establece el box-sizing por defecto */
+    font-size: 62.5%;
+    /* Define la base del tamaño de fuente a 62.5% para facilitar el uso de rem */
+    scroll-snap-type: y mandatory;
+    /* Configura el scroll snap en el eje y */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Hereda el box-sizing de html */
+
+/* Globales */
+body {
+    margin: 0;
+    background-color: var(--blanco);
+    font-size: 2rem;
+    line-height: 1.5;
+    /* Define la altura de línea */
+    font-family: var(--fuentePrincipal);
+}
+
+p {
+    font-size: 1.6rem;
+    color: var(--negro);
+}
+span {
+    justify-self: center;
+    font-family: var(--fuentePrincipal);
+    font-size: 1.8rem;
+    line-height: 1.5;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--primario);
+}
+
+img {
+   width: 100%;
+   max-height: 60rem;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: var(--blanco);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* Navegación Principal */
+nav {
+    height: 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 50, 158, 0.61);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0, 50, 158, 0.61);
+    box-shadow: 0px 4px 5px 0px rgba(0, 50, 158, 0.61);
+}
+
+.nav-izquierda {
+    align-items: center;
+    margin-left: 0rem;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    height: 5rem;
+}
+
+.separacion {
+    width: 2rem;
+}
+
+.links-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.links {
+    height: 100%;
+    padding: 0 2.2rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--negro);
+    font-size: 1.7rem;
+}
+
+.links:hover {
+    color: var(--primarioOscuro);
+}
+
+nav svg {
+    fill: var(--text-color);
+}
+
+#sidebar-active {
+    display: none;
+}
+
+.open-sidebar-button,
+.close-sidebar-button {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .links-container {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+        background-color: var(--blanco);
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+        transition: 0.75s ease-out;
+    }
+
+    .links {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+
+    .open-sidebar-button {
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+
+    .open-sidebar-button,
+    .close-sidebar-button {
+        padding: 20px;
+        display: block;
+        cursor: pointer;
+    }
+
+    #sidebar-active:checked~.links-container {
+        right: 0;
+    }
+
+    #sidebar-active:checked~#overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+}
+
+.course-container {
+    position: relative; /* Necesario para posicionamiento interno */
+    overflow: hidden; /* Corta cualquier contenido que se desborde */
+    background-color: var(--blanco);
+    border: 1px solid var(--grisClaro); 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: calc(33% - 40px); /* Para tres columnas */
+    text-align: center; 
+    transition: transform 0.2s;
+}
+#course-container {
+    max-width: 100%; /* Permite que el contenedor ocupe todo el ancho */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 0; /* Asegúrate de que no haya padding */
+}
+
+.bachillerato-image {
+    position: relative; /* Necesario para posicionar elementos hijos */
+    overflow: hidden; /* Para ocultar cualquier desbordamiento */
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Cubre el contenedor sin distorsionar la imagen */
+    max-height: 400px; /* Ajusta la altura máxima según sea necesario */
+    
+}
+
+/* Overlay para el texto */
+#curso-info-overlay {
+    position: absolute; /* Posiciona el texto de manera absoluta */
+    top: 0; /* Ajusta la distancia desde la parte superior */
+    left: 0; /* Ajusta la distancia desde la izquierda */
+    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+    height: 40rem; /* Asegúrate de que ocupe toda la altura */
+    color: white; /* Cambia el color del texto para que sea visible sobre la imagen */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con 70% de opacidad */
+    display: flex; /* Usar flexbox para centrar el contenido */
+    flex-direction: column; /* Alinear en columna */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    padding: 20px; /* Añadir un poco de padding para que el texto no esté pegado a los bordes */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    z-index: 1; /* Asegúrate de que esté por encima de la imagen */
+}
+
+/* Asegúrate de que el contenedor del texto no sobresalga */
+#curso-info-overlay h1,
+#curso-info-overlay p {
+    margin: 0; /* Elimina márgenes para evitar desbordamientos */
+    text-align: center; /* Centrar el texto */
+}
+
+#curso-info-overlay h1 {
+    font-size: 2.5rem; /* Ajusta el tamaño del título */
+    z-index: 2; /* Asegúrate de que esté por encima del fondo */
+}
+
+#curso-info-overlay p {
+    font-size: 1.6rem; /* Ajusta el tamaño del texto */
+    z-index: 2; /* Asegúrate de que esté por encima del fondo */
+    color: var(--blanco);
+}
+
+/* Asegúrate de que no haya margen en la parte inferior del overlay */
+#curso-info-overlay {
+    margin-bottom: 0; /* Asegúrate de que no haya margen inferior */
+}
+/* General adjustments for small screens */
+@media (max-width: 768px) {
+    .hero-image {
+        max-height: 300px; /* Set max height for small screens */
+    }
+
+    #curso-info-overlay {
+        height: 100%;
+        padding: 2rem; /* Use consistent units for padding */
+    }
+
+    #curso-info-overlay h1 {
+        font-size: 2.5rem; /* Adjust title font size */
+    }
+
+    #curso-info-overlay p {
+        font-size: 1.4rem; /* Adjust paragraph font size */
+    }
+
+    .bachillerato-image {
+        padding: 10px; /* Adjust padding */
+    }
+
+    #accordion {
+        margin-top: 20px; /* Add top margin to accordion */
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .hero-image {
+        max-height: 300px; /* Ajusta la altura máxima en pantallas pequeñas */
+    }
+
+    #curso-info-overlay {
+        padding: 10px; /* Ajusta el padding si es necesario */
+    }
+}
+/* Estilo de la imagen del héroe */
+.hero-image {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Cubre el contenedor sin distorsionar la imagen */
+    max-height: 400px; /* Ajusta la altura máxima según sea necesario */
+}
+
+/* Estilo de las imágenes */
+img {
+    width: 100%; /* Las imágenes ocuparán todo el ancho del contenedor */
+    max-height: 60rem; /* Altura máxima para imágenes */
+}
+
+/* Asegúrate de que todos los elementos hereden el box-sizing */
+*, *::before, *::after {
+    box-sizing: border-box; /* Cambiado a border-box para incluir padding y border en el tamaño total */
+}   
+
+    #accordion {
+        margin-top: 20px; /* Margen superior para el acordeón */
+    }
+
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    #curso-info-overlay h1 {
+        font-size: 2rem; /* Ajusta el tamaño del título aún más */
+    }
+
+    #curso-info-overlay p {
+        font-size: 1.2rem; /* Ajusta el tamaño del texto aún más */
+    }
+
+    .hero-image {
+        max-height: 250px; /* Ajusta la altura máxima en pantallas muy pequeñas */
+    }
+}
+/* Accordion */
+
+#container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.accordion-header {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+.accordion-body {
+    color: #444;
+    font-size: 14px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease, opacity 0.3s ease;
+}
+
+.accordion-body.active {
+    height: auto;
+    opacity: 1;
+    padding: 5px 15px;
+}
+
+#accordion-container {
+    display: flex; /* Usar flexbox para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    margin: 20px auto; /* Espacio vertical alrededor del acordeón y centrar el contenedor */
+    width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+}
+
+#accordion {
+    width: 100%; /* Asegúrate de que el acordeón ocupe todo el ancho del contenedor */
+    max-width: 800px;
+    margin: 0 auto; /* Asegúrate de que no haya margen */
+    padding: 0; /* Asegúrate de que no haya padding */
+    margin-top: 0;
+}
+
+/* Asegúrate de que los elementos del acordeón no tengan márgenes indeseados */
+.accordion {
+    margin: 10px 0; /* Margen vertical entre los acordeones */
+    width: 100%; /* Asegúrate de que ocupe todo el ancho del contenedor */
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+.footer {
+    padding: 4rem 0;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    background-color: #6d6d6d;
+}
+
+.social {
+    text-align: center;
+    padding-bottom: 2.5rem;
+    color: var(--negro);
+}
+
+.social a {
+    font-size: 2.4rem;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 4rem;
+    height: 4rem;
+    line-height: 3.8rem;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.social a:hover {
+    opacity: 1;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 1.5rem;
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+}
+
+.copyright {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #aaa;
+}   

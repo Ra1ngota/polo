@@ -1,0 +1,9 @@
+{
+    "liveServer.settings.port": 5501,
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+    "editor.lineHeight": 24,
+    "editor.wordWrap": "on",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000
+}

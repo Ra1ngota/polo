@@ -1,0 +1,218 @@
+ <!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Institución</title>
+        <link rel="preload" href="css/normalize.css" as="style">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/Institucion.css">
+        <link rel="preload" href="css/Institucion.css">
+        <link rel="preload" href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" as="font" crossorigin>
+        <link rel="preconnect" href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold">
+        <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="icon" type="image/png" href="img/logopolo.png"/>
+        <script src="js/institucion.js" defer></script> 
+
+    </head>
+    <body>
+        <header>
+            <nav>
+              <input type="checkbox" id="sidebar-active"/>
+              <div class="nav-izquierda">
+                <a class="logo" href="index.html">
+                  <img src="img/logoutu.png" alt="logo de utu"/>
+                  <img class="separacion" src="img/separacionlogo.png" alt="separacion de logo"/>
+                  <img src="img/logopolo.png" alt="logo del polo" />
+                </a>
+              </div>
+              <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+                  <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg>
+              </label>
+              <label id="overlay" for="sidebar-active"></label>
+              <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                  <svg class="boton-cierre" xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                  </svg>
+                </label>
+                <a class="links" href="index.html">Inicio</a>
+                <!-- <a class="links" href="inscripciones.html">Inscripciones</a> -->
+                <a class="links" href="cursos.html">Cursos</a>
+                <a class="links" href="contacto.html">Contacto</a>
+              </div>
+            </nav>
+          </header>
+        <main>
+            <div class="introduccion"> 
+                <h3>Instalaciones</h3>
+                <p>Fundado el 9 de marzo de 2017 por resolución 407/17, el Polo Tecnológico Tacuarembó ofrece una variedad de instalaciones modernas y equipadas para <br> apoyar el aprendizaje y el desarrollo de habilidades, desde salones de clase hasta talleres y laboratorios, pasando por una biblioteca y una cantina, todo <br> diseñado para brindar una experiencia educativa integral y de alta calidad.</p>
+            </div>
+        <section class="instalaciones1">
+            <div class="row">
+                <div class="slider">
+                    <div class="instalaciones-col1">
+                        <div class="slides" id="cantinaSlider">
+                            <img class="slide" src="img/cantina1.jpg" alt="imagen de la cantina">
+                            <img class="slide" src="img/cantina2.jpg" alt="imagen de la cantina">
+                            <img class="slide" src="img/cantina3.jpg" alt="imagen de la cantina">
+                            <button class="prev" onclick="prevSlide('cantinaSlider')">&#10094;</button>
+                            <button class="next" onclick="nextSlide('cantinaSlider')">&#10095;</button>
+                            <h3>Cantina</h3>
+                            <p>El objetivo de la Cantina de la institución es brindar a estudiantes, docentes y personal un espacio donde puedan disfrutar de alimentos.</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="slider">
+                    <div class="instalaciones-col1">
+                        <div class="slides" id="auditorioSlider">
+                            <img class="slide" src="img/auditorio1.jpg" alt="Imagen del Auditorio 1">
+                            <img class="slide" src="img/auditorio2.jpg" alt="Imagen del Auditorio 4">
+                            <img class="slide" src="img/auditorio4.jpg" alt="Imagen del Auditorio 3">
+                            <button class="prev" onclick="prevSlide('auditorioSlider')">&#10094;</button>
+                            <button class="next" onclick="nextSlide('auditorioSlider')">&#10095;</button>
+                            <h3>Auditorio</h3>
+                            <p>El Polo ofrece un gran auditorio interior con un sistema de acústica profesional y una capacidad de asientos para más de 150 personas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="instalaciones-col1">
+                        <div class="slides" id="quimicaSlider">
+                            <img class="slide" src="img/quimica3.jpg" alt="Imagen del Taller de Química 1">
+                            <img class="slide" src="img/quimica1.jpg" alt="Imagen del Taller de Química 2">
+                            <img class="slide" src="img/quimica4.jpg" alt="">
+                            <img class="slide" src="img/quimica6.jpg" alt="">
+                            <button class="prev" onclick="prevSlide('quimicaSlider')">&#10094;</button>
+                            <button class="next" onclick="nextSlide('quimicaSlider')">&#10095;</button>
+                            <h3>Taller de Química</h3>
+                            <p>El taller de Química ofrece herramientas variadas y un espacio y ambiente apto para cualquier tipo de proyecto práctico y/o teórico.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+
+        <section class="instalaciones1">
+            <div class="row">
+                <div class="slider">
+                    <div class="instalaciones-col1">
+                        <div class="slides" id="informaticaSlider">
+                            <img class="slide" src="img/informática1.jpg" alt="Imagen de la Sala de Informática 1">
+                            <img class="slide" src="img/informática2.jpg" alt="Imagen de la Sala de Informática 2">
+                            <img class="slide" src="img/informática3.jpg" alt="Imagen de la Sala de Informática 3">
+                            <button class="prev" onclick="prevSlide('informaticaSlider')">&#10094;</button>
+                            <button class="next" onclick="nextSlide('informaticaSlider')">&#10095;</button>
+                            <h3>Sala de Informática</h3>
+                            <p>En la sala de informática, los estudiantes tienen acceso a tecnología para aprender y desarrollar habilidades y proyectos digitales esenciales.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="instalaciones-col1">
+                        <div class="slides" id="electromecanicaSlider">
+                            <img class="slide" src="img/electromecánica2.jpg" alt="Imagen del Taller de Electromecánica 1">
+                            <img class="slide" src="img/electromecánica7.jpg" alt="Imagen del Taller de Electromecánica 2">
+                            <button class="prev" onclick="prevSlide('electromecanicaSlider')">&#10094;</button>
+                            <button class="next" onclick="nextSlide('electromecanicaSlider')">&#10095;</button>
+                            <h3>Taller de Electromecánica</h3>
+                            <p>En el taller de electromecánica, los estudiantes desarrollan habilidades prácticas en la integración de sistemas eléctricos y mecánicos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="instalaciones-col1">
+                        <div class="slides" id="bibliotecaSlider">
+                            <img class="slide" src="img/biblioteca1.jpg" alt="Imagen de la Biblioteca 1">
+                            <img class="slide" src="img/biblioteca2.jpg" alt="Imagen de la Biblioteca 2">
+                            <button class="prev" onclick="prevSlide('bibliotecaSlider')">&#10094;</button>
+                            <button class="next" onclick="nextSlide('bibliotecaSlider')">&#10095;</button>
+                            <h3>Biblioteca</h3>
+                            <p>La biblioteca es un espacio tranquilo y cómodo, diseñado para que los docentes y estudiantes se concentren en sus tareas académicas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        
+        
+        <section class="instalaciones1">
+            <div class="row">
+                <div class="slider">
+                    <div class="instalaciones-col1">
+                        <div class="slides" id="poloSlider">
+                            <img class="slide" src="img/polo13.jpg" alt="Imagen del Polo Tecnologico 1">
+                            <img class="slide" src="img/polo11.jpg" alt="Imagen del Polo Tecnologico 2">
+                            <img class="slide" src="img/polo14.jpg" alt="Imagen del Polo Tecnologico 3">
+                            <img class="slide" src="img/polo1.jpg" alt="Imagen del Polo Tecnologico 3">
+                            <button class="prev" onclick="prevSlide('poloSlider')">&#10094;</button>
+                            <button class="next" onclick="nextSlide('poloSlider')">&#10095;</button>
+                            <h3>Polo Tecnologico</h3>
+                            <p>En el Polo Tecnologico, los alumnos tienen espacios de recreación, descanso y herramientas para fortalecer y potenciar el aprendizaje.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="instalaciones-col1">
+                        <div class="slides" id="salonesSlider">
+                            <img class="slide" src="img/salon1.jpg" alt="Imagen de los salones">
+                           <img class="slide" src="img/Salon3.jpg" alt="Imagen de los salones">
+                            <button class="prev" onclick="prevSlide('salonesSlider')">&#10094;</button>
+                            <button class="next" onclick="nextSlide('salonesSlider')">&#10095;</button>
+                            <h3>Salones</h3>
+                            <p>En los salones, el ambiente limpio, herramientas necesarias y la prolijidad es crucial para que sea un sitio cómodo para los alumnos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="instalaciones-col1">
+                        <div class="slides" id="inclusivaSlider"> <!-- Cambié el ID a 'inclusivaSlider' -->
+                            <img class="slide" src="img/polo8.jpg" alt="Imagen de la institucion inclusiva 1">
+                            <img class="slide" src="img/polo7.jpg" alt="Imagen de la institucion inclusiva 2">
+                            <img class="slide" src="img/polo5.jpg" alt="Imagen de la institucion inclusiva 3">
+                            <button class="prev" onclick="prevSlide('inclusivaSlider')">&#10094;</button>
+                            <button class="next" onclick="nextSlide('inclusivaSlider')">&#10095;</button>
+                            <h3>Institución Inclusiva</h3>
+                            <p>Nuestra institución es inclusiva, con rampas, ascensores y baños adaptados para personas con capacidades diferentes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> 
+        
+    <!-- Video -->
+    <div class="contenedor-video">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8DIejfBr95E?si=kzMVMU3FBGXCXtpu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+        <section class="footer">
+            <div class="social">
+                <a href="https://www.instagram.com/polotacuarembo/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100047322954593"><i class="fab fa-facebook-f"></i></a>
+            </div>
+
+            <ul class="list">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <!-- <li>
+                    <a href="inscripciones.html">Inscripciones</a>
+                </li> -->
+                <li>
+                    <a href="cursos.html">Cursos</a>    
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <p class="copyright">
+                &copy; 2024 Polo Tecnológico Tacuarembó | Todos los derechos reservados <br>Contacto: 4634 3656  | Correo: polotacuarembo@gmail.com
+            </p>
+        </section>
+    </body>
+</html>

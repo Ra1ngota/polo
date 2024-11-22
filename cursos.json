@@ -1,0 +1,318 @@
+[
+  {
+    "id": "quimica",
+    "nombre": "Bachillerato Ciencias y Tecnologías de laboratorio (Química Industrial)",
+    "descripcion": "En la carrera de Bachillerato Ciencias y Tecnologías de laboratorio, aprenderás a realizar análisis químicos y microbiológicos, comprender procesos químicos orgánicos e inorgánicos, y aplicar principios de física y matemáticas en contextos industriales.",
+    "imagen": "img/quimica4.jpg",
+    "contenido": [
+      {
+        "titulo": "¿Qué aprenderé en el Bachillerato en Química?",
+        "texto": "En este bachillerato, los estudiantes adquieren una sólida formación en química general, orgánica, inorgánica y analítica. Aprenderás a realizar experimentos químicos, interpretar resultados y comprender las propiedades y transformaciones de la materia."
+      },
+      {
+        "titulo": "¿Cómo está estructurado el plan de estudios?",
+        "texto": "El plan de estudios está diseñado para ser completado en tres años. Incluye asignaturas teóricas y prácticas como análisis químicos, microbiología, procesos industriales y principios de física y matemáticas aplicadas."
+      },
+      {
+        "titulo": "¿Cuáles son las oportunidades laborales para los graduados?",
+        "texto": "Los egresados pueden trabajar en industrias como la automotriz, manufactura, energías renovables, minería y construcción. Pueden desempeñarse en laboratorios de análisis, control de calidad, investigación y desarrollo."
+      },
+      {
+        "titulo": "¿Cuáles son los requisitos de ingreso para este bachillerato?",
+        "texto": "Los requisitos suelen incluir la finalización de la educación secundaria básica, con énfasis en matemáticas y ciencias físicas. Se valora el interés por la investigación y el trabajo experimental."
+      }
+    ]
+  },
+  {
+    "id": "informatica",
+    "nombre": "Bachillerato Tecnologías de la información (Informática)",
+    "descripcion": "En la carrera de Bachillerato Tecnologías de la Información, te especializarás en diseño y operación de sistemas robóticos avanzados y redes de telecomunicaciones, preparándote para liderar proyectos tecnológicos en empresas innovadoras.",
+    "imagen": "img/informática1.jpg",
+    "contenido": [
+      {
+        "titulo": "¿Qué aprenderé en el Bachillerato de Tecnologías de la Información?",
+        "texto": "Desarrollarás habilidades en programación, diseño de sistemas robóticos, redes de telecomunicaciones, desarrollo de software y análisis de sistemas informáticos."
+      },
+      {
+        "titulo": "¿Cómo está estructurado el plan de estudios?",
+        "texto": "El plan de estudios se extiende por tres años, combinando materias teóricas como programación, matemáticas y electrónica, con prácticas de desarrollo de proyectos tecnológicos."
+      },
+      {
+        "titulo": "¿Cuáles son las oportunidades laborales para los graduados?",
+        "texto": "Podrás trabajar como desarrollador de software, técnico en sistemas, especialista en redes, programador, analista de sistemas o emprender en el área de tecnología."
+      },
+      {
+        "titulo": "¿Cuáles son los requisitos de ingreso para este bachillerato?",
+        "texto": "Se requiere haber completado la educación secundaria básica, con aptitudes en matemáticas, lógica y un interés genuino por la tecnología y la innovación."
+      }
+    ]
+  },
+  {
+    "id": "electromecanica",
+    "nombre": "Bachillerato Sistemas Mecánicos Automatizados (Electromecánica)",
+    "descripcion": "En la carrera de Bachillerato Sistemas Mecánicos Automatizados, aprenderás a diseñar, analizar y mantener sistemas electromecánicos, integrando conocimientos de física, química y matemáticas, con aplicaciones en automatización industrial.",
+    "imagen": "img/electromecanica1.jpg",
+    "contenido": [
+      {
+        "titulo": "¿Qué aprenderé en el Bachillerato en Electromecánica?",
+        "texto": "Adquirirás conocimientos en electricidad, electrónica, mecánica, automatización, diagnóstico y mantenimiento de sistemas electromecánicos industriales."
+      },
+      {
+        "titulo": "¿Cómo está estructurado el plan de estudios?",
+        "texto": "El programa se desarrolla en tres años, con un enfoque equilibrado entre teoría y práctica, incluyendo materias como física, matemáticas, electrónica industrial y sistemas de control."
+      },
+      {
+        "titulo": "¿Cuáles son las oportunidades laborales para los graduados?",
+        "texto": "Podrás trabajar en mantenimiento industrial, instalación de sistemas mecánicos, operación de maquinaria, soporte técnico y proyectos de automatización en diversos sectores."
+      },
+      {
+        "titulo": "¿Cuáles son los requisitos de ingreso para este bachillerato?",
+        "texto": "Es necesario haber completado la educación secundaria básica, con una base sólida en matemáticas y física. Se valora el interés por la tecnología y los sistemas mecánicos."
+      }
+    ]
+  },
+  {
+    "id": "forestal",
+    "nombre": "2º Bachillerato Agrario opción Forestal",
+    "descripcion": "En la carrera de 2º Bachillerato Agrario opción Forestal, aprenderás sobre producción agroforestal y manejo racional de recursos naturales, enfocándote en la sostenibilidad, el aprovechamiento responsable y la conservación de los ecosistemas forestales.",
+    "imagen": "img/bachilleratoforestalcurso.jpg",
+    "contenido": [
+      {
+        "titulo": "¿Qué aprenderé en el Bachillerato Forestal?",
+        "texto": "Desarrollarás conocimientos sobre silvicultura, gestión de ecosistemas forestales, conservación ambiental, técnicas de reforestación y manejo sostenible de recursos naturales."
+      },
+      {
+        "titulo": "¿Cómo está estructurado el plan de estudios?",
+        "texto": "El programa se desarrolla en tres años, combinando materias teóricas como botánica, ecología y gestión forestal, con prácticas de campo y proyectos de conservación."
+      },
+      {
+        "titulo": "¿Cuáles son las oportunidades laborales para los graduados?",
+        "texto": "Podrás trabajar en empresas forestales, parques nacionales, consultorías ambientales, investigación, gestión de recursos naturales y proyectos de conservación."
+      },
+      {
+        "titulo": "¿Cuáles son los requisitos de ingreso para este bachillerato?",
+        "texto": "Se requiere haber completado la educación secundaria básica, con interés en ciencias naturales, medio ambiente y trabajo de campo."
+      }
+    ]
+  },
+  {
+    "id": "forestal2",
+    "nombre": "Técnico Forestal",
+    "descripcion": "Este curso te capacita para el manejo de recursos forestales, prácticas silvícolas y gestión sostenible de áreas naturales, promoviendo una relación equilibrada entre producción económica y preservación ambiental para generaciones futuras.",
+    "imagen": "img/tecnicoforestal.jpeg",
+    "contenido": [
+      {
+        "titulo": "¿Qué aprenderé en Técnico Forestal?",
+        "texto": "Desarrollarás habilidades en técnicas de reforestación, manejo de viveros, inventarios forestales y gestión ambiental."
+      },
+      {
+        "titulo": "¿Cómo está estructurado el plan de estudios?",
+        "texto": "Incluye asignaturas teóricas y prácticas como ecología forestal, silvicultura y tecnologías aplicadas."
+      },
+      {
+        "titulo": "¿Cuáles son las oportunidades laborales?",
+        "texto": "Podrás trabajar en viveros, empresas forestales, consultorías ambientales y proyectos de restauración ecológica."
+      },
+      {
+        "titulo": "Requisitos de ingreso",
+        "texto": "Haber culminado la educación secundaria básica, con interés en ciencias naturales y trabajo de campo."
+      }
+    ]
+  },
+  {
+    "id": "administracion",
+    "nombre": "Técnico en Administración",
+    "descripcion": "Formación para gestionar operaciones administrativas en organizaciones públicas y privadas, adquiriendo conocimientos en planificación, control de recursos, elaboración de presupuestos y optimización de procesos organizacionales con un enfoque práctico y estratégico.",
+    "imagen": "img/tecnicoenadministracion.jpg",
+    "contenido": [
+      {
+        "titulo": "¿Qué aprenderé en Técnico en Administración?",
+        "texto": "Habilidades en contabilidad, gestión financiera, administración general y uso de herramientas tecnológicas."
+      },
+      {
+        "titulo": "¿Cómo está estructurado el plan de estudios?",
+        "texto": "Asigna materias como contabilidad básica, análisis financiero, marketing y gestión de recursos humanos."
+      },
+      {
+        "titulo": "¿Cuáles son las oportunidades laborales?",
+        "texto": "Podrás desempeñarte como auxiliar contable, gestor financiero, coordinador administrativo o asistente de proyectos."
+      },
+      {
+        "titulo": "Requisitos de ingreso",
+        "texto": "Finalización de la educación secundaria básica con afinidad por los números y la organización."
+      }
+    ]
+  },
+  {
+    "id": "marketing",
+    "nombre": "Técnico en Marketing",
+    "descripcion": "Especialización en estrategias de mercado, publicidad y comportamiento del consumidor, orientada al diseño de campañas innovadoras, análisis de tendencias y desarrollo de marcas sólidas para competir en mercados nacionales e internacionales.",
+    "imagen": "img/tecnicomarketing.jpg",
+    "contenido": [
+      {
+        "titulo": "¿Qué aprenderé en Técnico en Marketing?",
+        "texto": "Diseño de estrategias publicitarias, análisis de mercados, desarrollo de productos y campañas digitales."
+      },
+      {
+        "titulo": "¿Cómo está estructurado el plan de estudios?",
+        "texto": "Combina teoría y práctica en áreas como estudios de mercado, branding y marketing digital."
+      },
+      {
+        "titulo": "¿Cuáles son las oportunidades laborales?",
+        "texto": "Podrás trabajar en agencias publicitarias, departamentos de marketing, como analista de mercado o emprendedor."
+      },
+      {
+        "titulo": "Requisitos de ingreso",
+        "texto": "Haber culminado la educación secundaria básica y tener interés en publicidad y comunicación."
+      }
+    ]
+        },
+        {
+          "id": "mantenimiento",
+          "nombre": "Técnico en Mantenimiento",
+          "descripcion": "Capacitación en diseño y ejecución de planes de mantenimiento en entornos industriales y residenciales, garantizando la seguridad, eficiencia y funcionalidad de los equipos, así como la prolongación de su vida útil a través de prácticas avanzadas.",
+          "imagen": "img/tecnicomantenimiento.jpg",
+          "contenido": [
+            {
+              "titulo": "¿Qué aprenderé en Técnico en Mantenimiento?",
+              "texto": "Diagnóstico, reparación y mantenimiento preventivo de equipos e instalaciones técnicas."
+            },
+            {
+              "titulo": "¿Cómo está estructurado el plan de estudios?",
+              "texto": "Materias prácticas y teóricas como mecánica, electricidad y gestión de mantenimiento."
+            },
+            {
+              "titulo": "¿Cuáles son las oportunidades laborales?",
+              "texto": "Podrás trabajar como técnico de mantenimiento en industrias, constructoras y empresas de servicios."
+            },
+            {
+              "titulo": "Requisitos de ingreso",
+              "texto": "Finalización de secundaria, con conocimientos básicos de tecnología y ciencias aplicadas."
+            }
+          ]
+        },
+        {
+          "id": "gestionhumana",
+          "nombre": "Gestion Humana",
+          "descripcion": "Formación en gestión de recursos humanos, enfocada en liderar equipos, diseñar políticas laborales efectivas, implementar estrategias de retención de talento y promover ambientes de trabajo que impulsen el desarrollo y la productividad.",
+          "imagen": "img/tecnincogestionhumana.jpg",
+          "contenido": [
+            {
+              "titulo": "¿Qué aprenderé estudiando Gestión Humana?",
+              "texto": "Gestionar los recursos humanos dentro de una organización. Esto incluye la contratación de personal, la gestión de talento, la administración de compensaciones, la capacitación y desarrollo de los empleados."
+            },
+            {
+              "titulo": "¿Cómo está estructurado el plan de estudios?",
+              "texto": "Psicología organizacional, administración de personal, desarrollo de talento humano, liderazgo, derecho laboral, negociación y comunicación organizacional."
+            },
+            {
+              "titulo": "¿Cuáles son las oportunidades laborales?",
+              "texto": "Responsables de recursos humanos, reclutadores, coordinadores de bienestar laboral, analistas de compensación y beneficios, o consultores en empresas privadas y públicas, ONGs, y en el sector educativo."
+            },
+            {
+              "titulo": "Requisitos de ingreso",
+              "texto": "Secundaria completa, con un enfoque en ciencias sociales, psicología, y administración."
+            }
+          ]
+        },
+        
+        {
+          "id": "logistica",
+          "nombre": "Técnico en Logística",
+          "descripcion": "Formación para gestionar el flujo de bienes y servicios en cadenas de suministro, abarcando desde la adquisición de materias primas hasta la entrega al cliente, con un enfoque en optimización, sostenibilidad y reducción de costos.",
+          "imagen": "img/tecnicologistica.jpg",
+          "contenido": [
+            {
+              "titulo": "¿Qué aprenderé en Técnico en Logística?",
+              "texto": "Planificación, control de inventarios, distribución y optimización de recursos logísticos."
+            },
+            {
+              "titulo": "¿Cómo está estructurado el plan de estudios?",
+              "texto": "Enfoque práctico y teórico en operaciones logísticas, transporte y comercio internacional."
+            },
+            {
+              "titulo": "¿Cuáles son las oportunidades laborales?",
+              "texto": "Podrás desempeñarte como gestor logístico, coordinador de transporte o analista de inventarios."
+            },
+            {
+              "titulo": "Requisitos de ingreso",
+              "texto": "Secundaria terminada, con habilidades organizativas y análisis de procesos."
+            }
+          ]
+        },
+        {
+          "id": "electricas",
+          "nombre": "Técnico en Instalaciones Eléctricas",
+          "descripcion": "Especialización en diseño, mantenimiento y operación de instalaciones eléctricas de baja tensión, con énfasis en cumplimiento normativo, seguridad laboral y eficiencia energética para aplicaciones en sectores residenciales, comerciales e industriales.",
+          "imagen": "img/tecnicoinstalacionelec.jpg",
+          "contenido": [
+            {
+              "titulo": "¿Qué aprenderé en Técnico en Instalaciones Eléctricas?",
+              "texto": "Diseño de sistemas eléctricos, normas de seguridad y mantenimiento de instalaciones."
+            },
+            {
+              "titulo": "¿Cómo está estructurado el plan de estudios?",
+              "texto": "Materias como electricidad básica, diseño de circuitos y tecnología aplicada."
+            },
+            {
+              "titulo": "¿Cuáles son las oportunidades laborales?",
+              "texto": "Técnico eléctrico en construcción, industria o mantenimiento de redes."
+            },
+            {
+              "titulo": "Requisitos de ingreso",
+              "texto": "Secundaria culminada, con conocimientos en física y tecnología."
+            }
+          ]
+        },
+        {
+          "id": "biotecnologia",
+          "nombre": "Tecnólogo en Biotecnología",
+          "descripcion": "Especialización en aplicaciones biotecnológicas en industrias farmacéuticas y agrícolas, desarrollando soluciones innovadoras en producción de medicamentos, mejora genética de cultivos y técnicas avanzadas para aumentar la sostenibilidad de la agroindustria.",
+          "imagen": "img/tecnicobiotecnologia.jpeg",
+          "contenido": [
+            {
+              "titulo": "¿Qué aprenderé en Tecnólogo en Biotecnología?",
+              "texto": "Aplicar principios de biología y tecnología para desarrollar productos y soluciones innovadoras en campos como la medicina, la agricultura, la farmacología, y el medio ambiente."
+            },
+            {
+              "titulo": "¿Cómo está estructurado el plan de estudios?",
+              "texto": "¿Incluye materias como biología molecular, genética, microbiología, bioquímica, técnicas de laboratorio, bioprocesos, ingeniería genética, y ética en biotecnología."
+            },
+            {
+              "titulo": "¿Cuáles son las oportunidades laborales?",
+              "texto": "Empresas farmacéuticas, laboratorios de investigación, empresas de biotecnología, hospitales, en la industria alimentaria, ambiental y en la agricultura."
+            },
+            {
+              "titulo": "Requisitos de ingreso",
+              "texto": "Secundaria culminada, con conocimientos en biología y química."
+            }
+          ]
+        },
+        {
+          "id": "optica",
+          "nombre": "Tecnólogo en Óptica",
+          "descripcion": "Formación técnica para diseño y mantenimiento de dispositivos ópticos, aplicados en áreas como telecomunicaciones, sistemas de visión avanzada, instrumentación médica y dispositivos tecnológicos que requieren precisión y alta calidad.",
+          "imagen": "img/tecnologooptica.jpg",
+          "contenido": [
+            {
+              "titulo": "¿Qué aprenderé en Tecnologo en Óptica?",
+              "texto": "Realizar exámenes visuales, diagnosticar problemas de visión, ajustar y fabricar lentes ópticas y trabajar con equipos especializados en el cuidado ocular."
+            },
+            {
+              "titulo": "¿Cómo está estructurado el plan de estudios?",
+              "texto": "Anatomía ocular, fisiología de la visión, óptica física, optometría, tecnologías de la visión, y manejo de equipos ópticos."
+            },
+            {
+              "titulo": "¿Cuáles son las oportunidades laborales?",
+              "texto": "Ópticas, clínicas oculares, hospitales, consultas privadas, y en la fabricación de lentes y productos ópticos."
+            },
+            {
+              "titulo": "Requisitos de ingreso",
+              "texto": "Secundaria culminada, con conocimientos en ciencias natrurales y matemáticas."
+            }
+          ]
+        }
+      ]
+  
+  
+  

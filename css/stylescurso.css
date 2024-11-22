@@ -1,0 +1,479 @@
+:root {
+    --primario: #2EC4FA;
+    --primarioOscuro: #1f96c1;
+    --secundario: #D89F6C;
+    --secunadrioClaro: #ff8921;
+    --verde: #C4DD09;
+    --blanco: #fff;
+    --negro: #000;
+    --gris: #a0a4a8;
+    --grisOscuro: #5d5f60;
+    --grisClaro: #f1f3f5;
+    --palletclaro: #fdf498;
+    --vilegend: #7bc043;
+    /* Color para botones y elementos destacados */
+    --fuentePrincipal: "SoDo Sans SemiBold",Helvetica,Arial,sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    /* Establece el box-sizing por defecto */
+    font-size: 62.5%;
+    /* Define la base del tamaño de fuente a 62.5% para facilitar el uso de rem */
+    scroll-snap-type: y mandatory;
+    /* Configura el scroll snap en el eje y */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Globales */
+body {
+    background-color: var(--blanco);
+    font-size: 2rem;
+    line-height: 1.5;
+    font-family: var(--fuentePrincipal);
+}
+
+p {
+    font-size: 1.8rem;
+    color: var(--gris);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primario);
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: var(--primarioOscuro);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+    
+ 
+/* Navegación Principal */
+nav {
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 50, 158, 0.61);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0, 50, 158, 0.61);
+    box-shadow: 0px 4px 5px 0px rgba(0, 50, 158, 0.61);
+}
+  
+.nav-izquierda {
+    align-items: center;
+    margin-left: 0rem;
+}
+  
+.logo {
+    display: flex;
+}
+  
+.logo img {
+    height: 5rem;
+}
+  
+.separacion {
+    width: 2rem;
+}
+  
+.links-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+  
+.links {
+    height: 100%;
+    padding: 0 2.2rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--negro);
+    font-size: 1.7rem;
+}
+  
+.links:hover {
+    color: var(--primarioOscuro);
+}
+  
+nav svg {
+    fill: var(--text-color);
+}
+  
+#sidebar-active {
+    display: none;
+}
+  
+.open-sidebar-button,
+.close-sidebar-button {
+    display: none;
+}
+  
+@media (max-width: 767px) {
+    .links-container {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+        background-color: var(--blanco);
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+        transition: 0.75s ease-out;
+    } 
+
+  
+    .links {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+    
+    .open-sidebar-button {
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+    
+    .open-sidebar-button,
+    .close-sidebar-button {
+        padding: 20px;
+        display: block;
+        cursor: pointer;
+    }
+    
+    #sidebar-active:checked~.links-container {
+        right: 0;
+    }
+    
+    #sidebar-active:checked~#overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+}
+
+
+/* Desktop */
+@media (min-width: 1200px) {
+    .courses-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .course {
+      width: 25%;
+    }
+}
+    
+
+/* Título */
+.titulo span {
+    font-size: 2rem;
+}
+
+    
+    /* Hero */
+.hero { 
+    background-image: url(../img/Cursos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    position: relative;
+    margin: 4rem 0 2rem 0;
+}
+
+.hero a { font-size: 1.7rem; }
+
+.contenido-hero {
+    position: absolute;
+    background-color: rgb( 0 0 0 / 70%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;;
+}
+
+.contenido-hero h2,
+.contenido-hero p {
+    color: var(--blanco)
+}
+
+.botones {
+    display: flex; /* Usar flexbox para alinear los botones */
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.contactar, .oferta {
+    padding: 3px 20px;
+    border: 3px solid var(--blanco);
+    border-radius: 1.5rem;
+    opacity: 0.85;
+    transition: transform 0.1s ease-in-out;
+    color: var(--blanco);
+    text-decoration: none; /* Asegúrate de que no haya subrayado */
+}
+
+.contactar:hover, .oferta:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.Bgimage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/polo2.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+
+/* Contenedor principal */
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* Estilo de los títulos principales */
+h1 {
+    text-align: center;
+    margin: 8rem 0;
+}
+
+
+/* Estilo de los subtítulos */
+h2 {
+    margin-top: 2rem;
+    padding-bottom: 10px;
+}
+
+
+/* Contenedor de cursos */
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.bachillerato-image {
+    position: relative; /* Para posicionar la imagen de manera adecuada */
+    overflow: hidden; /* Para ocultar cualquier desbordamiento de la imagen */
+}
+
+.hero-image {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 400px; /* Ajusta la altura máxima según sea necesario */
+    object-fit: cover; /* Cubre el contenedor sin distorsionar la imagen */
+}
+
+/* Estilo de cada curso */
+.course {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Estilo de las imágenes */
+/* Estilo de las imágenes */
+.course img {
+    width: 100%; /* Las imágenes ocuparán todo el ancho del contenedor */
+    height: 200px; /* Asignar una altura fija para todas las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 1rem;
+}
+
+.course img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.course img:hover {
+    transform: scale(1.05); /* scale the image up slightly on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle box shadow */
+}
+
+/* Make the anchor tag fill the entire image */
+.course a {
+    display: block;
+}
+
+/* Remove the default anchor tag styles */
+.course a:hover {
+    text-decoration: none;
+}
+
+/* Estilo de los títulos de los cursos */
+.course h3 {
+    font-size: 2rem;
+    margin: 0 0 10px 0;
+    transition: transform 0.3s ease-in-out;
+}
+.course h3:hover{
+    transform: scale(1.1);
+}
+
+/* Estilo de las descripciones de los cursos */
+.course p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+}
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .course {
+        width: 45%; /* Dos cursos por fila */
+    }
+}
+
+@media (max-width: 480px) {
+    .course {
+        width: 90%; /* Un curso por fila */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Ajustar tamaño de título */
+    }
+
+    h2 {
+        font-size: 2rem; /* Ajustar tamaño de subtítulo */
+    }
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.banner img {
+    width: 100%;
+    height: 10rem;
+    border-radius: 1rem;
+}
+
+
+/* Footer */
+.footer {
+    padding: 4rem 0;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    background-color: #6d6d6d;
+}
+
+.social {
+    text-align: center;
+    padding-bottom: 2.5rem;
+    color: var(--negro);
+}
+
+.social a {
+    font-size: 2.4rem;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 4rem;
+    height: 4rem;
+    line-height: 3.8rem;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.social a:hover {
+    opacity: 1;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+.footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 1.5rem;
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+}
+
+.copyright {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #aaa;
+}
